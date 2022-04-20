@@ -1,3 +1,3 @@
 # Task List
 
-> This repository contains a simple Task List builded with JavaScript and Bootstrap that storages the content on your web browser.
+> This repository contains a simple Task List built with JavaScript and Bootstrap that storages the content on your web browser.
