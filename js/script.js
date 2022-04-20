@@ -1,14 +1,11 @@
-// Getting the relevant tags
 const input = document.querySelector('input[name=tarefa]')
 const botao = document.querySelector('#botao')
 const lista = document.querySelector('#lista')
 const card = document.querySelector('.card')
 
-// Checking if the db exists
 let tasks = JSON.parse(localStorage.getItem('tasks')) || []
 
 function renderTasks() {
-    // Limpando a tela para evitar renderizar a lista mais de uma vez
     lista.innerHTML = ''
 
     for (const task of tasks) {
@@ -40,9 +37,6 @@ function deleteTask(task) {
 }
 
 function saveDataOnStorage() {
-    // Salvando os dados no storage do navegador, apenas dados simples podem ser
-    // armazenados (string, boolean, number, ...).
-    // Chave, valor
     localStorage.setItem('tasks', JSON.stringify(tasks))
 }
 
